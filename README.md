@@ -2,25 +2,23 @@
 
 ## About
 
-When organising a Carpentries workshop a website is created for the workshop using the Carpentries workshop template (https://github.com/carpentries/workshop-template). The template includes a schedule which shows the start and end times of each episode for every day including break times
+When organising a Carpentries workshop a website is created for the workshop using the Carpentries workshop template (https://github.com/carpentries/workshop-template). The workshop template includes a schedule which shows the start and end times of each episode for every day including break times. This program allows a user to capture the start time of a session and the length (in minutes) of all the episodes. The program also allows break and lunch times to be inserted at any point. The program provides for initial keybard input or input from a csv file. Once the user is happy with the schedule it can be exported as an html table which can then be included in the workshop website repository saved as a file called  schedule.html.
 
 ### Project Team
-Dr L. Ipsum, Newcastle University  ([lorem.ipsum@newcastle.ac.uk](mailto:lorem.ipsum@newcastle.ac.uk))  
-Professor D. Sit Amet, XY University  ([d.sit.amet@newcastle.ac.uk](mailto:d.sit.amet@example.com))  
+Dr Jannetta Steyn ([jannetta.steyn@newcastle.ac.uk](mailto:jannetta.steyn@newcastle.ac.uk))  
+DAnny Watson  ([d.sit.amet@newcastle.ac.uk](mailto:d.sit.amet@example.com))  
 
 ### RSE Contact
-C. Adipiscing  
+Jannetta Steyn
 RSE Team  
 Newcastle University  
-([consectetur.adpiscing@newcastle.ac.uk](mailto:consectetur.adpiscing@newcastle.ac.uk))  
+([jannetta.steyn@newcastle.ac.uk](mailto:jannetta.steyn@newcastle.ac.uk))  
 
 ## Built With
 
 This section is intended to list the frameworks and tools you're using to develop this software. Please link to the home page or documentatation in each case.
 
-[Framework 1](https://something.com)  
-[Framework 2](https://something.com)  
-[Framework 3](https://something.com)  
+[Python](https://www.python.org/)  
 
 ## Getting Started
 
@@ -91,4 +89,4 @@ Please cite the associated papers for this work if you use this code:
 
 
 ## Acknowledgements
-This work was funded by a grant from the UK Research Councils, EPSRC grant ref. EP/L012345/1, “Example project title, please update”.
+This work was funded by internship funding provided by The Research Software Engineering Team of Newcastle University
