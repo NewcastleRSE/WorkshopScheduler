@@ -6,7 +6,7 @@ When organising a Carpentries workshop a website is created for the workshop usi
 
 ### Project Team
 Dr Jannetta Steyn ([jannetta.steyn@newcastle.ac.uk](mailto:jannetta.steyn@newcastle.ac.uk))  
-DAnny Watson  ([d.sit.amet@newcastle.ac.uk](mailto:d.sit.amet@example.com))  
+Danny Watson  ([d.sit.amet@newcastle.ac.uk](mailto:d.sit.amet@example.com))  
 
 ### RSE Contact
 Jannetta Steyn
