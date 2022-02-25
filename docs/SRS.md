@@ -2,7 +2,7 @@
 title: Software Specification Requirements
 ---
 
-(https://www.perforce.com/blog/alm/how-write-software-requirements-specification-srs-document)
+[SRS Template Source](https://www.perforce.com/blog/alm/how-write-software-requirements-specification-srs-document)
 1. Introduction
     1. Purpose
     2. Intended Audience
