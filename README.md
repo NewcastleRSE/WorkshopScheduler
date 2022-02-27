@@ -9,7 +9,7 @@ Dr Jannetta Steyn ([jannetta.steyn@newcastle.ac.uk](mailto:jannetta.steyn@newcas
 Danny Watson  ([d.sit.amet@newcastle.ac.uk](mailto:d.sit.amet@example.com))  
 
 ### RSE Contact
-Jannetta Steyn
+Dr Jannetta Steyn  
 RSE Team  
 Newcastle University  
 ([jannetta.steyn@newcastle.ac.uk](mailto:jannetta.steyn@newcastle.ac.uk))  
