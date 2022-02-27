@@ -23,6 +23,10 @@ entries:
       url: /SRS
       output: web, pdf
 
+    - title: User Manual
+      url: /UserManual
+      output: web, pdf
+
   - title: Diagrams
     output: web, pdf
     folderitems:
