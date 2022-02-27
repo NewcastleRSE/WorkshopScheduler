@@ -22,3 +22,11 @@ entries:
     - title: Software Requirements Specification
       url: /SRS
       output: web, pdf
+
+  - title: Diagrams
+    output: web, pdf
+    folderitems:
+
+    - title: Main Screen Layout
+      url: /MainScreen
+      output: web, pdf
