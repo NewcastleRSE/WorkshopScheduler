@@ -99,4 +99,6 @@ Please cite the associated papers for this work if you use this code:
 
 
 ## Acknowledgements
-This work was funded by internship funding provided by The Research Software Engineering Team of Newcastle University
+- This work was funded by internship funding provided by The Research Software Engineering Team of Newcastle University  
+- The theme used for these GitHub Pages are based on [The Documentations Theme for Jekyll](https://jekyllthemes.io/theme/documentation)
+  - https://github.com/tomjoht/documentation-theme-jekyll
