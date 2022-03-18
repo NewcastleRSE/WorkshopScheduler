@@ -23,9 +23,9 @@ Newcastle University
 
 ## Built With
 
-[Python](https://www.python.org/)  
-[tkinter](https://docs.python.org/3/library/tkinter.html)
-[csv](https://docs.python.org/3/library/csv.html)
+- [Python](https://www.python.org/) 
+- [tkinter](https://docs.python.org/3/library/tkinter.html)
+- [csv](https://docs.python.org/3/library/csv.html)
 
 ## Getting Started
 
