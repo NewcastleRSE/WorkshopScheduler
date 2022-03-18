@@ -31,33 +31,33 @@ Newcastle University
 
 ### Prerequisites
 
-Any tools or versions of languages needed to run code. For example specific Python or Node versions. Minimum hardware requirements also go here.
+* Python 3.10
+* Windows, Linux or Mac
 
 ### Installation
 
-How to build or install the applcation.
+TBD
 
 ### Running Locally
 
-How to run the application on your local system.
+TBD
 
 ### Running Tests
 
-How to run tests on your local system.
+TBD
 
 ## Deployment
 
 ### Local
 
-Deploying to a production style setup but on the local system. Examples of this would include `venv`, `anaconda`, `Docker` or `minikube`. 
+TBD
 
 ### Production
 
-Deploying to the production system. Examples of this would include cloud, HPC or virtual machine. 
-
+TBD
 ## Usage
 
-Any links to production environment, video demos and screenshots.
+TBD
 
 ## Roadmap
 
@@ -69,7 +69,8 @@ Any links to production environment, video demos and screenshots.
 ## Contributing
 
 ### gh-pages Branch
-GitHub Pages containing all documentation about the project.
+
+https://newcastlerse.github.io/WorkshopScheduler/index
 
 ### Main Branch
 Protected and can only be pushed to via pull requests. Should be considered stable and a representation of production code.
