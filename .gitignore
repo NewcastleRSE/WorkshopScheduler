@@ -2,3 +2,4 @@
 _site
 .idea/
 /docs: reference material
+.DS_Store
