@@ -1,4 +1,5 @@
 .vscode/
 _site
 .idea/
-/docs
+.DS_Store
+docs: reference material/
