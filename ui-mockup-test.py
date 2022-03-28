@@ -18,6 +18,6 @@ menubar = MenuBar(app,
 
 start_time_label = Text(app, text="start time:", grid=[0, 0])
 
-start_time_input_box = TextBox(app, grid=[2,0])
+start_time_input_box = TextBox(app, grid=[2, 0])
 
 app.display()
