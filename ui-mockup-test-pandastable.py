@@ -20,9 +20,9 @@ menubar = MenuBar(app,
 start_time_label = Text(app, text="start time:", grid=[0, 0])
 
 start_time_input_box = TextBox(app, grid=[2, 0])
-f = tk.Frame()
+f = tk.Frame(app)
 pt = Table(f)
-pt.importCSV("/schedule-template/Template-schedule.csv")
+pt.importCSV("schedule-template/Template-schedule.csv")
 pt.show()
-
+app.add_tk_widget(f)
 app.display()
