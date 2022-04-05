@@ -8,13 +8,9 @@ def import_csv():
 def export_to_html():
     print("export to HTML pressed ")
 
+
 def export_to_csv():
     print("export to csv pressed ")
-
-
-
-
-
 
 
 root = Tk()
@@ -29,6 +25,9 @@ filemenu.add_separator()
 filemenu.add_command(label="Exit", command=root.quit)
 menubar.add_cascade(label="File", menu=filemenu)
 
+start_time_label = Label(root, text="start time:", justify=LEFT)
+
+start_time_label.pack()
 
 root.config(menu=menubar)
 root.mainloop()
