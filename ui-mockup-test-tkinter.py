@@ -10,10 +10,25 @@ def export_to_html():
 
 def export_to_csv():
     print("export to csv pressed ")
+
+
+
+
+
+
+
 root = Tk()
 menubar = Menu(root)
-file_menu = Menu(menubar, tearoff=0)
-file_menu.add_command(label=,command=)
-file_menu.add_command(label=,command=)
-file_menu.add_command(label=,command=)
+filemenu = Menu(menubar, tearoff=0)
+filemenu.add_command(label="Import a CSV file", command=import_csv)
+filemenu.add_command(label="Export to CSV file", command=export_to_csv)
+filemenu.add_command(label="Export to HTML file", command=export_to_html)
+
+filemenu.add_separator()
+
+filemenu.add_command(label="Exit", command=root.quit)
+menubar.add_cascade(label="File", menu=filemenu)
+
+
+root.config(menu=menubar)
 root.mainloop()
