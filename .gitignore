@@ -3,3 +3,5 @@ _site/
 .jekyll-cache/
 .vscode/
 .idea/
+*.DS_Store
+docs: reference material/
