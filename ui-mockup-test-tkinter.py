@@ -1,6 +1,5 @@
 from tkinter import *
 
-
 def import_csv():
     print("import csv button pressed")
 
@@ -29,5 +28,6 @@ start_time_label = Label(root, text="start time:", justify=LEFT)
 
 start_time_label.pack()
 
+start_time_input_box = Entry(root).pack()
 root.config(menu=menubar)
 root.mainloop()
