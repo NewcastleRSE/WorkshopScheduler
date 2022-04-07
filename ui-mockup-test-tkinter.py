@@ -30,7 +30,7 @@ start_time_label.pack()
 
 start_time_input_box = Entry(root).pack()
 
-pt = Table(parent=root)
+pt = Table(root)
 pt.show()
 
 root.config(menu=menubar)
