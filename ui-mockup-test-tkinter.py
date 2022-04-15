@@ -36,11 +36,12 @@ start_time_input_box = Entry(root).pack()
 # Frame
 frame = Frame(root)
 frame.pack(fill=BOTH, expand=1)
-# pandastable
+# pandastable Initialisation
 pt = Table(frame)
 # Import CSV template file
 pt.importCSV("schedule-template/Template-schedule.csv")
+#show table
 pt.show()
-
+#
 root.config(menu=menubar)
 root.mainloop()
