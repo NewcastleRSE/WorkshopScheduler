@@ -30,12 +30,12 @@ filemenu.add_command(label="Exit", command=root.quit)
 menubar.add_cascade(label="File", menu=filemenu)
 
 # StartTime Label and input field
-start_time_label = Label(root, text="start time:", justify=LEFT).pack()
-start_time_input_box = Entry(root).pack()
+start_time_label = Label(root, text="start time:", justify=LEFT).grid(row=1,column=1)
+start_time_input_box = Entry(root,justify=LEFT).grid(row=1,column=2)
 
 # Frame
 frame = Frame(root)
-frame.pack(fill=BOTH, expand=1)
+frame.grid(row=3, column=3)
 # pandastable Initialisation
 pt = Table(frame)
 # Import CSV template file
