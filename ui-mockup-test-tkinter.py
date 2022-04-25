@@ -39,9 +39,11 @@ frame.pack(fill=BOTH, expand=1)
 # pandastable Initialisation
 pt = Table(frame)
 # Import CSV template file
-pt.importCSV("schedule-template/Template-schedule.csv")
+pt.importCSV("schedule-template/Template-schedule-blank.csv")
 #show table
 pt.show()
 #
 root.config(menu=menubar)
+# add window bar title
+root.title("WorkshopScheduler")
 root.mainloop()
