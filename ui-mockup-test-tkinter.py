@@ -31,7 +31,7 @@ menubar.add_cascade(label="File", menu=filemenu)
 
 # StartTime Label and input field
 start_time_label = Label(root, text="start time:", justify=LEFT)
-start_time_label.grid(row=1, column=1
+start_time_label.grid(row=1, column=1)
 start_time_input_box = Entry(root, justify=LEFT, width=5)
 start_time_input_box.grid(row=1, column=2, sticky=W)
 
