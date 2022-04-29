@@ -4,7 +4,7 @@ from tkinter import filedialog as fd
 
 # Functions called when buttons are pressed
 
-def mew_schedule():
+def new_schedule():
     pt.importCSV("schedule-template/Template-schedule-blank.csv")
 def import_csv():
     filetypes = (
@@ -32,7 +32,7 @@ menubar = Menu(root)
 
 # File menu Section declaration
 filemenu = Menu(menubar, tearoff=0)
-filemenu.add_command(label="New Schedule", command=mew_schedule)
+filemenu.add_command(label="New Schedule", command=new_schedule)
 filemenu.add_command(label="Import a CSV file", command=import_csv)
 filemenu.add_command(label="Export to CSV file", command=export_to_csv)
 filemenu.add_command(label="Export to HTML file", command=export_to_html)
