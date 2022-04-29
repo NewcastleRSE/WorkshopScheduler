@@ -1,14 +1,21 @@
 # imports
 from pandastable import *
-
+from tkinter import filedialog as fd
 
 # Functions called when buttons are pressed
 
 def mew_schedule():
     pt.importCSV("schedule-template/Template-schedule-blank.csv")
 def import_csv():
-    print("import csv button pressed")
-
+    filetypes = (
+        ('csv files', '*.csv'),
+    )
+    filename = fd.askopenfilename(
+        title="choose csv file",
+        initialdir='/',
+        filetypes=filetypes)
+    pt.importCSV(filename)
+    pt.redraw()
 
 def export_to_html():
     print("export to HTML pressed ")
