@@ -5,8 +5,7 @@ from pandastable import *
 # Functions called when buttons are pressed
 
 def mew_schedule():
-    print("new schedule pressed")
-
+    pt.importCSV("schedule-template/Template-schedule-blank.csv")
 def import_csv():
     print("import csv button pressed")
 
