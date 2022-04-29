@@ -6,6 +6,7 @@ from tkinter import filedialog as fd
 
 def new_schedule():
     pt.importCSV("schedule-template/Template-schedule-blank.csv")
+    pt.redraw()
 def import_csv():
     filetypes = (
         ('csv files', '*.csv'),
