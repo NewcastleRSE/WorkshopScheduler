@@ -1,22 +1,51 @@
 # imports
+from tkinter import filedialog as fd
+from tkinter.filedialog import asksaveasfilename
+
 from pandastable import *
 
 
 # Functions called when buttons are pressed
 
-def mew_schedule():
-    print("new schedule pressed")
+def new_schedule():
+    pt.importCSV("schedule-template/Template-schedule-blank.csv")
+    pt.redraw()
+
 
 def import_csv():
-    print("import csv button pressed")
+    filetypes = (
+        ('csv files', '*.csv'),
+    )
+    filename = fd.askopenfilename(
+        title="choose csv file",
+        initialdir='/',
+        filetypes=filetypes)
+    pt.importCSV(filename)
+    pt.redraw()
 
 
 def export_to_html():
     print("export to HTML pressed ")
+    filetypes = [('html Files', '*.html')]
+    file = asksaveasfilename(filetypes=filetypes,
+                             defaultextension=filetypes,
+                             initialdir='/',
+                             initialfile="Workshop-schedule")
+
+    print(file)
+    pt.model.df.to_html(buf=file, index=False)
 
 
 def export_to_csv():
     print("export to csv pressed ")
+    filetypes = [('csv Files', '*.csv')]
+    file = asksaveasfilename(filetypes=filetypes,
+                             defaultextension=filetypes,
+                             initialdir='/',
+                             initialfile="Workshop-schedule")
+
+    print(file)
+    pt.model.df.to_csv(path_or_buf=file, index=False)
 
 
 # Root of application
@@ -26,7 +55,7 @@ menubar = Menu(root)
 
 # File menu Section declaration
 filemenu = Menu(menubar, tearoff=0)
-filemenu.add_command(label="New Schedule", command=mew_schedule)
+filemenu.add_command(label="New Schedule", command=new_schedule)
 filemenu.add_command(label="Import a CSV file", command=import_csv)
 filemenu.add_command(label="Export to CSV file", command=export_to_csv)
 filemenu.add_command(label="Export to HTML file", command=export_to_html)
