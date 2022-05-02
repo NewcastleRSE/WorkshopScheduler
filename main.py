@@ -56,7 +56,6 @@ def config_break_colour(default=False):
         color_code = ((0, 249, 0), '#00f900')
 
 
-
 # Root of application
 root = Tk()
 # MenubarDeclaration
