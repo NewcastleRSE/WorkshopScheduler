@@ -56,10 +56,12 @@ def config_break_colour(default=False):
         color_code = ((0, 249, 0), '#00f900')
 
     df = pt.model.df
-    breakrows = df.index[df['Episode']=="Break"].tolist()
+    breakrows = df.index[df['Episode'] == "Break"].tolist()
     for row in breakrows:
-     pt.setRowColors(breakrows, color_code[1])
-     pt.redraw()
+        pt.setRowColors(row, color_code[1])
+        pt.redraw()
+
+
 # Root of application
 root = Tk()
 # MenubarDeclaration
