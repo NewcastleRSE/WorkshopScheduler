@@ -8,7 +8,7 @@ from pandastable import *
 # Functions called when buttons are pressed
 
 def new_schedule():
-    pt.importCSV("schedule-template/cs/Template-schedule-blank.csv")
+    pt.importCSV("schedule-template/csv/Template-schedule-blank.csv")
     pt.redraw()
 
 
