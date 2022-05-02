@@ -8,7 +8,7 @@ from pandastable import *
 # Functions called when buttons are pressed
 
 def new_schedule():
-    pt.importCSV("schedule-template/cs/Template-schedule-blank.csv")
+    pt.importCSV("schedule-template/csv/Template-schedule-blank.csv")
     pt.redraw()
 
 
@@ -55,7 +55,11 @@ def config_break_colour(default=False):
     else:
         color_code = ((0, 249, 0), '#00f900')
 
-
+    df = pt.model.df
+    breakrows = df.index[df['Episode']=="Break"].tolist()
+    for row in breakrows:
+     pt.setRowColors(breakrows, color_code[1])
+     pt.redraw()
 # Root of application
 root = Tk()
 # MenubarDeclaration
