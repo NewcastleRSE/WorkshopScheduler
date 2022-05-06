@@ -45,9 +45,7 @@ Newcastle University
 
 ***
 
-* Clone the repository 
-
-``` git clone https://github.com/NewcastleRSE/WorkshopScheduler.git ```
+* Clone the repository ``` git clone https://github.com/NewcastleRSE/WorkshopScheduler.git ```
 
 ***
 
