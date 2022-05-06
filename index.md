@@ -40,22 +40,18 @@ Newcastle University
 pip install tk
 ```
 -pandastable
-```
-pip install pandastable
-```
+
+```pip install pandastable```
 
 * Clone the repository
-
-```
-git clone https://github.com/NewcastleRSE/WorkshopScheduler.git
-```
+```git clone https://github.com/NewcastleRSE/WorkshopScheduler.git```
 
 
 ### Running Locally
 * run main.py
 ```
 cd [Path to Repository]
-python3.10  main.y
+python3.10  main.py
 ```
 ### Running Tests
 
