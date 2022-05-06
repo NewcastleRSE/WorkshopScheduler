@@ -34,12 +34,29 @@ Newcastle University
 
 ### Installation
 
-TBD
+* install libraries and Dependencies 
+-tkinter
+```
+pip install tk
+```
+-pandastable
+```
+pip install pandastable
+```
+
+* Clone the repository
+
+```
+git clone https://github.com/NewcastleRSE/WorkshopScheduler.git
+```
+
 
 ### Running Locally
-
-TBD
-
+* run main.py
+```
+cd [Path to Repository]
+python3.10  main.y
+```
 ### Running Tests
 
 TBD
