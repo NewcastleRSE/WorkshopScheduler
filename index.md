@@ -45,8 +45,8 @@ Newcastle University
 ```git clone https://github.com/NewcastleRSE/WorkshopScheduler.git```
 ### Running Locally
 * run main.py
-```  cd [Path to Repository]
-   python3.10  main.py ```
+```  cd [Path to Repository] ``` then
+ ```  python3.10  main.py ```
 ### Running Tests
 
 TBD
