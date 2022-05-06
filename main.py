@@ -3,15 +3,15 @@ from tkinter import filedialog as fd
 from tkinter.filedialog import asksaveasfilename
 
 from pandastable import *
-
+from tkinter import filedialog as fd
 
 # Functions called when buttons are pressed
 
-def new_schedule():
-    pt.importCSV("schedule-template/csv/Template-schedule-blank.csv")
+def new_schedule()
+    pt.importCSV("schedule-template/Template-schedule-blank.csv")
     pt.redraw()
-
-
+    
+    
 def import_csv():
     filetypes = (
         ('csv files', '*.csv'),
@@ -75,7 +75,7 @@ frame.grid(row=3, column=2, sticky=W)
 # pandastable Initialisation
 pt = Table(frame)
 # Import CSV template file
-pt.importCSV("schedule-template/csv/Template-schedule-blank.csv")
+pt.importCSV("schedule-template/Template-schedule-blank.csv")
 # show table
 pt.show()
 #
