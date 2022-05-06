@@ -35,15 +35,23 @@ Newcastle University
 ### Installation
 
 ### install libraries and Dependencies 
+
 ***
 
 * tkinter 
 ```pip install tk```
 * pandastable
 ```pip install pandastable```
+
 ***
+
 * Clone the repository
+***
+
 ```git clone https://github.com/NewcastleRSE/WorkshopScheduler.git```
+
+***
+
 ### Running Locally
 * run main.py
 ```  cd [Path to Repository] ``` then
