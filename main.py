@@ -7,7 +7,7 @@ from tkinter import filedialog as fd
 
 # Functions called when buttons are pressed
 
-def new_schedule()
+def new_schedule():
     pt.importCSV("schedule-template/Template-schedule-blank.csv")
     pt.redraw()
     
