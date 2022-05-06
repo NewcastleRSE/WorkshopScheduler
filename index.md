@@ -24,7 +24,6 @@ Newcastle University
 
 - [Python](https://www.python.org/) 
 - [tkinter](https://docs.python.org/3/library/tkinter.html)
-- [csv](https://docs.python.org/3/library/csv.html)
 - [pandastable](https://pandastable.readthedocs.io/en/latest/examples.html) 
 ## Getting Started
 
