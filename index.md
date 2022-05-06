@@ -34,7 +34,9 @@ Newcastle University
 
 ### Installation
 
-# install libraries and Dependencies 
+#### install libraries and Dependencies 
+***
+
 * tkinter
 ```
 pip install tk
