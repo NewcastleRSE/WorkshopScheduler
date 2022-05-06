@@ -1,12 +1,17 @@
 # imports
+from tkinter import filedialog as fd
+from tkinter.filedialog import asksaveasfilename
+
 from pandastable import *
 from tkinter import filedialog as fd
 
 # Functions called when buttons are pressed
 
-def new_schedule():
+def new_schedule()
     pt.importCSV("schedule-template/Template-schedule-blank.csv")
     pt.redraw()
+    
+    
 def import_csv():
     filetypes = (
         ('csv files', '*.csv'),
@@ -18,12 +23,29 @@ def import_csv():
     pt.importCSV(filename)
     pt.redraw()
 
+
 def export_to_html():
     print("export to HTML pressed ")
+    filetypes = [('html Files', '*.html')]
+    file = asksaveasfilename(filetypes=filetypes,
+                             defaultextension=filetypes,
+                             initialdir='/',
+                             initialfile="Workshop-schedule")
+
+    print(file)
+    pt.model.df.to_html(buf=file, index=False)
 
 
 def export_to_csv():
     print("export to csv pressed ")
+    filetypes = [('csv Files', '*.csv')]
+    file = asksaveasfilename(filetypes=filetypes,
+                             defaultextension=filetypes,
+                             initialdir='/',
+                             initialfile="Workshop-schedule")
+
+    print(file)
+    pt.model.df.to_csv(path_or_buf=file, index=False)
 
 
 # Root of application
