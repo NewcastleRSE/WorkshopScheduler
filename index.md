@@ -49,7 +49,7 @@ Newcastle University
 
 ***
 
-```git clone https://github.com/NewcastleRSE/WorkshopScheduler.git```
+``` git clone https://github.com/NewcastleRSE/WorkshopScheduler.git ```
 
 ***
 
