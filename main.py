@@ -21,6 +21,7 @@ def import_csv():
         initialdir='/',
         filetypes=filetypes)
     pt.importCSV(filename)
+    config_break_colour(default=True)
     pt.redraw()
 
 
@@ -54,11 +55,12 @@ def config_break_colour(default=False):
         print(color_code)
     else:
         color_code = ((0, 249, 0), '#00f900')
+        print(color_code)
 
     df = pt.model.df
     breakrows = df.index[df['Episode'] == "Break"].tolist()
     for row in breakrows:
-        pt.setRowColors(row, color_code[1])
+        pt.setRowColors(rows=row, clr=color_code[1], cols='all')
         pt.redraw()
 
 
