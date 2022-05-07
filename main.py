@@ -3,15 +3,15 @@ from tkinter import filedialog as fd
 from tkinter.filedialog import asksaveasfilename
 from tkinter import colorchooser
 from pandastable import *
-
+from tkinter import filedialog as fd
 
 # Functions called when buttons are pressed
 
 def new_schedule():
     pt.importCSV("schedule-template/csv/Template-schedule-blank.csv")
     pt.redraw()
-
-
+    
+    
 def import_csv():
     filetypes = (
         ('csv files', '*.csv'),
