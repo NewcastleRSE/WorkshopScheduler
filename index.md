@@ -39,14 +39,14 @@ Newcastle University
 ***
 
 * tkinter
-```pip install tk```
+```pip2 install tk```
 
 *  <u> Linux users should also install python3-tk </u>
 ```  sudo apt-get install python3-tk ```
 
 
 * pandastable
-```pip install pandastable```
+```pip2 install pandastable```
 
 ***
 
