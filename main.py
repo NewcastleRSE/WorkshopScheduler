@@ -30,7 +30,7 @@ def export_to_html():
     file = asksaveasfilename(filetypes=filetypes,
                              defaultextension=filetypes,
                              initialdir='/',
-                             initialfile="Workshop-schedule")
+                             initialfile="Workshop-schedule.html")
 
     print(file)
     pt.model.df.to_html(buf=file, index=False)
@@ -42,7 +42,7 @@ def export_to_csv():
     file = asksaveasfilename(filetypes=filetypes,
                              defaultextension=filetypes,
                              initialdir='/',
-                             initialfile="Workshop-schedule")
+                             initialfile="Workshop-schedule.csv")
 
     print(file)
     pt.model.df.to_csv(path_or_buf=file, index=False)
