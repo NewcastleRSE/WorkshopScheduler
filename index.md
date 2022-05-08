@@ -44,6 +44,8 @@ Newcastle University
 *  <u> Linux users should also install python3-tk </u>
 ```  sudo apt-get install python3-tk ```
 
+***
+
 
 * pandastable
 ```pip3 install pandastable```
