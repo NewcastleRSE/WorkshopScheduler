@@ -52,13 +52,12 @@ def export_to_csv():
 
 # edit menu
 
-def move_row(direction = str):
+def move_row(direction=str):
     print("move_row")
     if direction == "up":
         print("up")
     elif direction == "down":
         print("down")
-
 
 
 # options meny
