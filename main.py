@@ -32,8 +32,8 @@ def export_to_html():
                              initialdir='/',
                              initialfile="Workshop-schedule.html")
 
-    print(file)
     pt.model.df.to_html(buf=file, index=False)
+    print(f"exported HTML file saved to {file}")
 
 
 def export_to_csv():
@@ -44,8 +44,8 @@ def export_to_csv():
                              initialdir='/',
                              initialfile="Workshop-schedule.csv")
 
-    print(file)
     pt.model.df.to_csv(path_or_buf=file, index=False)
+    print(f"exported csv saved to {file}")
 
 
 # Root of application
