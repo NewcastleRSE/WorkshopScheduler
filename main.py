@@ -56,12 +56,16 @@ def move_row_up():
     selectedrow = pt.getSelectedRow()
     newrownumber = selectedrow + 1
     print("up", selectedrow, newrownumber)
+    pt.model.df
 
 
 def move_row_down():
     selectedrow = pt.getSelectedRow()
     newrownumber = selectedrow - 1
-    print("down",selectedrow, newrownumber)
+    print("down", selectedrow, newrownumber)
+    pt.model.df
+
+
 # options meny
 
 def config_break_colour(default=False):
