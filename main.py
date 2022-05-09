@@ -52,12 +52,13 @@ def export_to_csv():
 
 # edit menu
 
-def move_row_up():
-    print("move_row_up")
+def move_row(direction = str):
+    print("move_row")
+    if direction == "up":
+        print("up")
+    elif direction == "down":
+        print("down")
 
-
-def move_row_down():
-    print("move_row_down")
 
 
 # options meny
@@ -93,8 +94,8 @@ filemenu.add_command(label="Exit", command=root.quit)
 menubar.add_cascade(label="File", menu=filemenu)
 
 editmenu = Menu(menubar, tearoff=1)
-editmenu.add_command(label="move row up", command=move_row_up)
-editmenu.add_command(label="move row down", command=move_row_down)
+editmenu.add_command(label="move row up", command=move_row(direction="up"))
+editmenu.add_command(label="move row down", command=move_row(direction="down"))
 menubar.add_cascade(label="Edit", menu=editmenu)
 
 optionsmenu = Menu(menubar, tearoff=2)
