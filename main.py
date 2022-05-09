@@ -54,14 +54,14 @@ def export_to_csv():
 
 def move_row_up():
     selectedrow = pt.getSelectedRow()
-    print("up")
+    newrownumber = selectedrow + 1
+    print("up", selectedrow, newrownumber)
 
 
 def move_row_down():
     selectedrow = pt.getSelectedRow()
-    print("down")
-
-
+    newrownumber = selectedrow - 1
+    print("down",selectedrow, newrownumber)
 # options meny
 
 def config_break_colour(default=False):
