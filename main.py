@@ -53,10 +53,12 @@ def export_to_csv():
 # edit menu
 
 def move_row_up():
+    selectedrow = pt.getSelectedRow()
     print("up")
 
 
 def move_row_down():
+    selectedrow = pt.getSelectedRow()
     print("down")
 
 
