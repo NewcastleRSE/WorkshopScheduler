@@ -53,6 +53,7 @@ def export_to_csv():
 # edit menu
 
 def move_row(direction=str):
+    selectedrow = pt.getSelectedRow()
     print("move_row")
     if direction == "up":
         print("up")
