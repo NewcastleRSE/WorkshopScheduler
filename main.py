@@ -1,17 +1,18 @@
 # imports
+from tkinter import colorchooser
 from tkinter import filedialog as fd
 from tkinter.filedialog import asksaveasfilename
-from tkinter import colorchooser
+
 from pandastable import *
-from tkinter import filedialog as fd
+
 
 # Functions called when buttons are pressed
-
+# file menu functions
 def new_schedule():
     pt.importCSV("schedule-template/csv/Template-schedule-blank.csv")
     pt.redraw()
-    
-    
+
+
 def import_csv():
     filetypes = (
         ('csv files', '*.csv'),
@@ -49,6 +50,18 @@ def export_to_csv():
     pt.model.df.to_csv(path_or_buf=file, index=False)
 
 
+# edit menu
+
+def move_row_up():
+    print("move_row_up")
+
+
+def move_row_down():
+    print("move_row_down")
+
+
+# options meny
+
 def config_break_colour(default=False):
     if not default:
         color_code = colorchooser.askcolor(title="Choose color")
@@ -79,7 +92,12 @@ filemenu.add_separator()
 filemenu.add_command(label="Exit", command=root.quit)
 menubar.add_cascade(label="File", menu=filemenu)
 
-optionsmenu = Menu(menubar, tearoff=1)
+editmenu = Menu(menubar, tearoff=1)
+editmenu.add_command(label="move row up", command=move_row_up)
+editmenu.add_command(label="move row down", command=move_row_down)
+menubar.add_cascade(label="Edit", menu=editmenu)
+
+optionsmenu = Menu(menubar, tearoff=2)
 optionsmenu.add_command(label="Configure colour for break entries", command=config_break_colour)
 menubar.add_cascade(label="Options", menu=optionsmenu)
 
