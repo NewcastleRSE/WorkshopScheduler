@@ -54,14 +54,14 @@ def export_to_csv():
 
 def move_row_up():
     selectedrow = pt.getSelectedRow()
-    newrownumber = selectedrow + 1
+    newrownumber = selectedrow - 1
     print("up", selectedrow, newrownumber)
     pt.model.df
 
 
 def move_row_down():
     selectedrow = pt.getSelectedRow()
-    newrownumber = selectedrow - 1
+    newrownumber = selectedrow + 1
     print("down", selectedrow, newrownumber)
     pt.model.df
 
