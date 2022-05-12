@@ -44,6 +44,10 @@ Newcastle University
 *  <u> Linux users should also install python3-tk </u>
 ```  sudo apt-get install python3-tk ```
 
+* <u> mac users May also Need to install python3-tk  </u>
+```brew install python-tk@3.10 ```
+
+
 ***
 
 
