@@ -24,6 +24,7 @@ def import_csv():
     pt.importCSV(filename)
     config_break_colour(default=True)
     pt.redraw()
+    print(pt.model.df)
 
 
 def export_to_html():
@@ -53,17 +54,24 @@ def export_to_csv():
 # edit menu
 
 def move_row_up():
-    selectedrow = pt.getSelectedRow()
-    newrownumber = selectedrow - 1
-    print("up", selectedrow, newrownumber)
-    pt.model.df
+    selectedrow = pt.model.df.iloc[pt.getSelectedRow()]
+    rowabove = pt.model.df.iloc[pt.getSelectedRow() - 1]
+    if selectedrow - 1 == -1:
+        pt.addRows(1)
+        pt.redraw()
+    print("up", selectedrow, selectedrow - 1)
+    print(pt.model.index)
+    pt.redraw()
 
 
 def move_row_down():
-    selectedrow = pt.getSelectedRow()
-    newrownumber = selectedrow + 1
-    print("down", selectedrow, newrownumber)
-    pt.model.df
+    selectedrow = pt.model.df.iloc[pt.getSelectedRow()]
+    rowbelow = pt.model.df.iloc[pt.getSelectedRow() + 1]
+    temp = selectedrow.copy()
+    selectedrow = rowbelow
+    rowbelow = temp
+    print(pt.model.df)
+    pt.redraw()
 
 
 # options meny
